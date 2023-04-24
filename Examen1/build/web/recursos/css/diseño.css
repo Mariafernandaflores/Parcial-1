@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: bisque;
+    font-family: sans-serif;
+}
+
+.cuadropadre {
+    width: 90%;
+    max-width: 1400px;
+    
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,auto);
+
+    grid-template-areas: "cuadronegro cuadroplomo"
+        "cuadronegro cuadroplomo"
+        "cuadronaranjado cuadroblanco"
+        "cuadronaranjado cuadroblanco";
+}
+
+
+.cuadropadre .cuadronegro {
+    height: 60px;
+    width: 250px;
+    display: flex;
+    background-color: black;
+    grid-area: cuadronegro;
+}
+
+.img1 {
+    max-width: 100%;
+    position: relative;
+    left: 20px;
+    top: 10px;
+}
+
+.sistemas {
+    color: white;
+    font-size: 25px;
+    position: relative;
+    top: 16px;
+    left: 30px;
+}
+
+
+
+.cuadropadre .cuadroplomo {
+    width: 1150px;
+    background-color: #323232;
+    grid-area: cuadroplomo;
+}
+
+.img2 {
+    position: relative;
+    max-width: 100%;
+    left: 925px;
+}
+
+.cuadropadre .cuadroanaranjado {
+    height: 600px;
+    grid-area: cuadronaranjado;
+    background-color: #c86c28;
+}
+
+.cuadrop2{
+    grid-template-columns: repeat(6,auto);
+    grid-template-rows: repeat(6,auto);
+    grid-template-areas: 
+        "c1 c1 c1 c1 c1 c1"
+        "c2 c2 c2 c2 c2 c2"
+        "c3 c3 c3 c3 c3 c3"
+        "c4 c4 c4 c4 c4 c4"
+        "c5 c5 c5 c5 c5 c5"
+        "c6 c6 c6 c6 c6 c6"
+}
+
+.cuadrop2 .c1 {
+    grid-area: c1;
+    color: white;
+    padding-left: 40px;
+    padding-top: 15px;
+    border-bottom: 2px white solid;
+    height: 35px;
+}
+.cuadrop2 .c2 {
+    grid-area: c2;
+    color: white;
+    padding-left: 40px;
+    padding-top: 15px;
+    border-bottom: 2px white solid;
+    height: 35px;
+}
+.cuadrop2 .c3 {
+    grid-area: c3;
+    color: white;
+    padding-left: 40px;
+    padding-top: 15px;
+    border-bottom: 2px white solid;
+    height: 35px;
+}
+.cuadrop2 .c4 {
+    grid-area: c4;
+    color: white;
+    padding-left: 40px;
+    padding-top: 15px;
+    border-bottom: 2px white solid;
+    height: 35px;
+}
+.cuadrop2 .c5 {
+    grid-area: c5;
+    color: white;
+    padding-left: 40px;
+    padding-top: 15px;
+    border-bottom: 2px white solid;
+    height: 35px;
+}
+.cuadrop2 .c6 {
+    grid-area: c6;
+    color: white;
+    padding-left: 40px;
+    padding-top: 15px;
+    border-bottom: 2px white solid;
+    height: 35px;
+}
+
+.cuadropadre .cuadroblanco {
+    grid-area: cuadroblanco;
+    background-color: white;
+}
+
+.cuadrop > div,
+.cuadrop .cuadro1,
+.cuadrop .cuadro2,
+.cuadrop .cuadro3,
+.cuadrop .cuadro4,
+.cuadrop .cuadro5,
+.cuadrop .cuadro6,
+.cuadrop .cuadro7,
+.cuadrop .cuadro8,
+.cuadrop .cuadro9 {
+    border: solid #414141 1px;
+}
+
+.cuadrop {
+    position: relative;
+    top:-17px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(5,auto);
+
+    grid-template-areas: "cuadro1 cuadro1 cuadro1 cuadro1"
+        "cuadro2 cuadro3 cuadro4 cuadro5"
+        "cuadro6 cuadro6 cuadro7 cuadro7"
+        "cuadro8 cuadro8 cuadro8 cuadro9"
+}
+
+#textc1 {
+    position: relative;
+    top: 16px;
+    left: 75px;
+}
+
+
+
+.cuadrop .cuadro1 {
+    grid-area: cuadro1;
+    height: 45px;
+}
+
+.cuadrop .cuadro2 {
+    grid-area: cuadro2;
+    height: 90px;
+}
+
+.cuadrop .cuadro3 {
+    grid-area: cuadro3;
+}
+
+.cuadrop .cuadro4 {
+    grid-area: cuadro4;
+
+}
+
+.cuadrop .cuadro5 {
+    grid-area: cuadro5;
+}
+
+.cuadrop .cuadro6 {
+    grid-area: cuadro6;
+    height: 160px;
+}
+
+.cuadrop .cuadro7 {
+    grid-area: cuadro7;
+}
+
+.cuadrop .cuadro8 {
+    grid-area: cuadro8;
+    height: 170px;
+}
+
+.cuadrop .cuadro9 {
+    grid-area: cuadro9;
+}
+
+#textc2 {
+    position: relative;
+    top:540px;
+    left: 75px;
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .cuadropadre {
+        grid-template-areas: "cuadronegro cuadronegro"
+            "cuadroplomo cuadroplomo"
+            "cuadronaranjado cuadronaranjado"
+            "cuadroblanco cuadroblanco";
+    }
+
+    .cuadropadre .cuadronegro {
+        height: 60px;
+        width: 100%;
+        display: flex;
+        background-color: black;
+        grid-area: cuadronegro;
+        justify-content: center;
+    }
+    
+    .cuadropadre .cuadroanaranjado {
+        height: 309px;
+    }
+   
+}
+
